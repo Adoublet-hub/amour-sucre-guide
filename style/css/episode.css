@@ -1,0 +1,371 @@
+/* ==================================================
+   PAGE ÉPISODE
+   Style commun à tous les jeux
+================================================== */
+
+
+/* =========================
+   CONTENEUR PRINCIPAL
+========================= */
+
+.episode-page {
+    max-width: 1000px;
+    margin: 45px auto;
+    padding: 0 25px;
+}
+
+
+/* =========================
+   TITRE DE L'ÉPISODE
+========================= */
+
+.episode-header {
+    margin-bottom: 35px;
+
+    text-align: center;
+}
+
+.game-name {
+    margin: 0 0 5px;
+
+    color: #d92f5b;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.episode-header h1 {
+    margin: 0;
+
+    color: #4a2634;
+
+    font-size: 46px;
+}
+
+.episode-title {
+    margin-top: 10px;
+
+    color: #875c6b;
+
+    font-size: 20px;
+}
+
+
+/* =========================
+   NAVIGATION ENTRE ÉPISODES
+========================= */
+
+.episode-navigation {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 30px 0;
+}
+
+.episode-navigation a {
+    padding: 10px 18px;
+
+    color: #d92f5b;
+
+    background-color: white;
+
+    border: 2px solid #f1a0b6;
+    border-radius: 20px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s,
+        color 0.2s,
+        transform 0.2s;
+}
+
+.episode-navigation a:hover {
+    color: white;
+
+    background-color: #d92f5b;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.episode-section {
+    margin: 35px 0;
+    padding: 30px;
+
+    background-color: white;
+
+    border: 1px solid #f4d5de;
+    border-radius: 18px;
+
+    box-shadow: 0 5px 15px rgba(110, 40, 65, 0.07);
+}
+
+.episode-section h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+
+    padding-bottom: 10px;
+
+    color: #d92f5b;
+
+    font-size: 26px;
+
+    border-bottom: 2px solid #f8dbe3;
+}
+
+
+/* =========================
+   INFORMATIONS
+========================= */
+
+.episode-info {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(200px, 1fr));
+
+    gap: 15px;
+}
+
+.episode-info p {
+    margin: 0;
+
+    padding: 15px;
+
+    background-color: #fff6f8;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+
+/* =========================
+   DIALOGUES
+========================= */
+
+.dialogue {
+    margin: 25px 0;
+}
+
+.character {
+    display: inline-block;
+
+    margin: 0 0 8px;
+
+    padding: 6px 13px;
+
+    color: white;
+
+    background-color: #d92f5b;
+
+    border-radius: 15px;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.dialogue-text {
+    margin: 0 0 15px;
+
+    padding: 15px 18px;
+
+    color: #553541;
+
+    background-color: #fff5f8;
+
+    border-left: 4px solid #ef6689;
+    border-radius: 0 10px 10px 0;
+
+    font-style: italic;
+}
+
+
+/* =========================
+   RÉPONSES
+========================= */
+
+.answers {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.answer {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 15px;
+
+    margin: 0;
+
+    padding: 12px 15px;
+
+    border-radius: 9px;
+
+    font-weight: 500;
+}
+
+.answer span {
+    flex-shrink: 0;
+
+    padding: 4px 9px;
+
+    border-radius: 12px;
+
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   RÉPONSE POSITIVE
+========================= */
+
+.answer.positive {
+    color: #27613c;
+
+    background-color: #e9f8ee;
+
+    border-left: 4px solid #55aa70;
+}
+
+.answer.positive span {
+    color: white;
+
+    background-color: #55aa70;
+}
+
+
+/* =========================
+   RÉPONSE NEUTRE
+========================= */
+
+.answer.neutral {
+    color: #64565b;
+
+    background-color: #f3f0f1;
+
+    border-left: 4px solid #aaa0a4;
+}
+
+.answer.neutral span {
+    color: white;
+
+    background-color: #92888c;
+}
+
+
+/* =========================
+   RÉPONSE NÉGATIVE
+========================= */
+
+.answer.negative {
+    color: #8a3545;
+
+    background-color: #fcebed;
+
+    border-left: 4px solid #d96678;
+}
+
+.answer.negative span {
+    color: white;
+
+    background-color: #d96678;
+}
+
+
+/* =========================
+   NAVIGATION BAS DE PAGE
+========================= */
+
+.episode-navigation.bottom {
+    margin-top: 45px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+    .episode-page {
+        margin-top: 30px;
+
+        padding: 0 15px;
+    }
+
+
+    /* TITRE */
+
+    .episode-header h1 {
+        font-size: 34px;
+    }
+
+    .episode-title {
+        font-size: 17px;
+    }
+
+
+    /* SECTIONS */
+
+    .episode-section {
+        margin: 25px 0;
+
+        padding: 20px;
+    }
+
+    .episode-section h2 {
+        font-size: 22px;
+    }
+
+
+    /* INFORMATIONS */
+
+    .episode-info {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* NAVIGATION */
+
+    .episode-navigation {
+        gap: 8px;
+    }
+
+    .episode-navigation a {
+        padding: 9px 12px;
+
+        font-size: 13px;
+    }
+
+
+    /* RÉPONSES */
+
+    .answer {
+        align-items: flex-start;
+
+        padding: 11px 12px;
+
+        font-size: 14px;
+    }
+}

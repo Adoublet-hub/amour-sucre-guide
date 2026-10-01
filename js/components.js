@@ -19,6 +19,10 @@ async function loadComponent(id, file) {
         }
 
         element.innerHTML = await response.text();
+        element.querySelectorAll("[data-link]").forEach(link => {
+            link.href = BASE_URL + link.dataset.link;
+        });
+
 
     } catch (error) {
         console.error(`Impossible de charger ${file}`, error);

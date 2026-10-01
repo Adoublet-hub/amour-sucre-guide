@@ -1,0 +1,147 @@
+/* =========================
+   PAGE HIGH SCHOOL LIFE
+========================= */
+
+.game-page {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 25px;
+}
+
+
+/* =========================
+   INTRODUCTION
+========================= */
+
+.game-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.game-intro h1 {
+    margin-bottom: 10px;
+
+    font-size: 42px;
+
+    color: #d92f5b;
+}
+
+.game-intro p {
+    margin: 0;
+
+    font-size: 18px;
+
+    color: #704453;
+}
+
+
+/* =========================
+   ÉPISODES
+========================= */
+
+.episodes-section h2 {
+    margin-bottom: 25px;
+
+    text-align: center;
+
+    font-size: 26px;
+
+    color: #4a2634;
+}
+
+
+/* Grille */
+
+.episodes-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(150px, 1fr));
+
+    gap: 15px;
+}
+
+
+/* Boutons */
+
+.episode-button {
+    display: block;
+
+    padding: 18px 10px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    color: #d92f5b;
+
+    background-color: white;
+
+    border: 2px solid #f1a0b6;
+
+    border-radius: 14px;
+
+    box-shadow: 0 3px 8px rgba(130, 40, 70, 0.08);
+
+    transition:
+        transform 0.2s,
+        background-color 0.2s,
+        color 0.2s,
+        box-shadow 0.2s;
+}
+
+
+/* Survol */
+
+.episode-button:hover {
+    transform: translateY(-4px);
+
+    background-color: #d92f5b;
+
+    color: white;
+
+    box-shadow: 0 7px 15px rgba(130, 40, 70, 0.18);
+}
+
+
+/* Quand on clique */
+
+.episode-button:active {
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .game-page {
+        margin-top: 30px;
+        padding: 0 15px;
+    }
+
+    .game-intro h1 {
+        font-size: 32px;
+    }
+
+    .game-intro p {
+        font-size: 16px;
+    }
+
+    .episodes-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 10px;
+    }
+
+    .episode-button {
+        padding: 15px 5px;
+
+        font-size: 14px;
+    }
+}
